@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar-content">
           {/* Logo */}
           <div className="navbar-logo">
-            <a href="#" className="logo-link">
+            <a href="/" className="logo-link">
               <img className='logo' src={logo} alt="" />
             </a>
           </div>
@@ -24,8 +24,8 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="desktop-nav">
             <div className="nav-links">
-              <a href="#" className="nav-link">Home</a>
-              <a href="#" className="nav-link">About</a>
+              <a href="/" className="nav-link">Home</a>
+              <a href="/about" className="nav-link">About</a>
               <a href="#" className="nav-link">Services</a>
               <a href="#" className="nav-link">Projects</a>
               <a href="#" className="nav-link">Contact</a>

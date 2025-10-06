@@ -7,10 +7,10 @@ const Home = () => {
 
   // Stats data
   const stats = [
-    { label: 'Projects Completed', value: 150, suffix: '+' },
-    { label: 'Happy Clients', value: 120, suffix: '+' },
-    { label: 'Years Experience', value: 5, suffix: '+' },
-    { label: 'Team Members', value: 12, suffix: '' }
+    { label: 'Projects Completed', value: 15, suffix: '+' },
+    { label: 'Happy Clients', value: 5, suffix: '+' },
+    { label: 'Years Experience', value: 2, suffix: '+' },
+    { label: 'Team Members', value: 3, suffix: '' }
   ];
 
   // Counter animation hook
