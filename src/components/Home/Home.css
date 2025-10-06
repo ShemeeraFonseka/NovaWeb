@@ -1,0 +1,217 @@
+.home-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1 {
+    color: #ebebeb;
+    font-size: 72px;
+    line-height: 85px;
+    margin-bottom: 20px;
+}
+
+.home-container h5 {
+    color: #ebebeb;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.getstart {
+    padding: 12px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(135deg, #800080, #ff69b4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+
+
+.getstart:hover {
+    transform: scale(1.1);
+}
+
+/* Stats Section */
+.stats-section {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 100%;
+}
+
+/* Counter Cards */
+.counter-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 90px 50px;
+    text-align: center;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.counter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff69b4, transparent);
+    transition: all 0.6s ease;
+}
+
+.counter-card:hover::before {
+    left: 100%;
+}
+
+.counter-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideUp 0.6s ease forwards;
+}
+
+.counter-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: ff69b4(0, 255, 255, 0.3);
+    border-color: #ff69b4;
+}
+
+.counter-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff69b4;
+    margin-bottom: 10px;
+    font-family: 'Arial', monospace;
+}
+
+.counter-label {
+    font-size: 16px;
+    color: #ebebeb;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes countUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.counter-number {
+    animation: countUp 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-container {
+        padding: 60px 50px;
+    }
+    
+    .home-container h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 40px 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .home-container h1 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+    
+    .home-container h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .counter-card {
+        padding: 20px 15px;
+    }
+    
+    .counter-number {
+        font-size: 36px;
+    }
+    
+    .counter-label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    .getstart {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+    }
+}

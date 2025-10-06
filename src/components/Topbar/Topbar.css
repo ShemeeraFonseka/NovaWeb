@@ -1,0 +1,251 @@
+/* Topbar Base Styles */
+.topbar {
+  background-color: #000000;
+  color: white;
+  font-size: 0.875rem;
+  position: relative;
+    padding: 0 100px;
+}
+
+.topbar-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.topbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+}
+
+/* Left Section - Contact Info */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 5px;
+}
+
+.contact-phone {
+  display: none;
+}
+
+.contact-email {
+  display: none;
+}
+
+.contact-location {
+  display: none;
+}
+
+/* Center Section - Announcement */
+.topbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.announcement-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+  color: #fbbf24;
+}
+
+.announcement-text {
+  font-size: 0.75rem;
+}
+
+/* Right Section - Social Links & Utilities */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-link {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+.social-link:hover {
+  color: white;
+}
+
+.social-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.utility-links {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+
+.utility-link {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.utility-link:hover {
+  color: white;
+}
+
+.separator {
+  color: #6b7280;
+}
+
+.close-button {
+  color: #9ca3af;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: white;
+}
+
+.close-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+/* Mobile Section */
+.mobile-section {
+  display: block;
+  background-color: #374151;
+  padding: 0.5rem 1rem;
+}
+
+.mobile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.mobile-contacts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.mobile-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.mobile-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-social-link {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.mobile-social-link:hover {
+  color: white;
+}
+
+.mobile-social-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+/* Responsive Styles */
+
+/* Small screens and up (640px+) */
+@media (min-width: 640px) {
+  .topbar-container {
+    padding: 0 1.5rem;
+  }
+  
+  .topbar-center {
+    flex: none;
+    text-align: left;
+  }
+  
+  .announcement {
+    justify-content: flex-start;
+  }
+  
+  .announcement-text {
+    font-size: 0.875rem;
+  }
+  
+  .contact-phone {
+    display: flex;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .mobile-section {
+    display: none;
+  }
+}
+
+/* Medium screens and up (768px+) */
+@media (min-width: 768px) {
+  .topbar-container {
+    padding: 0 2rem;
+  }
+  
+  .contact-email {
+    display: flex;
+  }
+  
+  .utility-links {
+    display: flex;
+  }
+}
+
+/* Large screens and up (1024px+) */
+@media (min-width: 1024px) {
+  .contact-location {
+    display: flex;
+  }
+}

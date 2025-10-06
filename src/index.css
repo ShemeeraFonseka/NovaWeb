@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #000000;
+background-image: 
+  radial-gradient(circle at 20% 30%, rgba(255, 20, 147, 0.3), transparent 70%),
+  radial-gradient(circle at 70% 20%, rgba(138, 43, 226, 0.25), transparent 70%),
+  radial-gradient(circle at 50% 70%, rgba(255, 105, 180, 0.2), transparent 70%),
+  radial-gradient(circle at 80% 80%, rgba(75, 0, 130, 0.2), transparent 70%);
+background-blend-mode: screen;
+
+
+
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
