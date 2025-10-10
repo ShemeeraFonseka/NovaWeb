@@ -78,7 +78,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="hero-content">
-        <h1>Complete Digital Solutions for Modern Businesses</h1>
+        <h1>COMPLETE DIGITAL SOLUTIONS FOR MODERN BUSINESSES</h1>
         <h5>From custom websites and software to e-commerce, cloud solutions, and branding, <br />we provide everything your business needs to thrive online. Partner with us to elevate <br />your digital presence and drive growth.</h5>
         <button className='getstart'>Get Started</button>
       </div>

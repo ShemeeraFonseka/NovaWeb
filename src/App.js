@@ -6,6 +6,7 @@ import BodyCanvasAnimation from './components/BodyCanvasAnimation/BodyCanvasAnim
 import About from './components/About/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutUs from './components/pages/AboutUs/AboutUs';
+import Team from './components/Team/Team';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <>
                 <Home />
                 <About />
+                <Team/>
               </>
             }
           />
