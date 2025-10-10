@@ -9,14 +9,20 @@ import AboutUs from './components/pages/AboutUs/AboutUs';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/NovaWeb">
       <div className="App">
-        <BodyCanvasAnimation /><Navbar />
+        <BodyCanvasAnimation />
+        <Navbar />
         <Routes>
-          <Route path="/" element={<>
-              <Home />
-              <About />
-            </>} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <About />
+              </>
+            }
+          />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>
