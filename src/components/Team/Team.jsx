@@ -1,7 +1,8 @@
 import React from 'react'
 import './Team.css';
-import shemiImg from './shemi.jpg';
-import seliImg from './seli.jpg';
+import shemiImg from './shemi.png';
+import seliImg from './seli.png';
+import runiImg from './runi.png';
 
 const Team = () => {
   const teamMembers = [
@@ -19,9 +20,9 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      position: "Design Director",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
+      name: "Runeesha Senadeera",
+      position: "Co-Founder & Marketing Lead",
+      image: runiImg
     }
   ];
 
