@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/NovaWeb/static/css/main.f9eca2a5.css",
-    "main.js": "/NovaWeb/static/js/main.250cd674.js",
+    "main.css": "/NovaWeb/static/css/main.48918fed.css",
+    "main.js": "/NovaWeb/static/js/main.28056252.js",
     "static/js/488.b94cc57a.chunk.js": "/NovaWeb/static/js/488.b94cc57a.chunk.js",
+    "static/media/shemi.png": "/NovaWeb/static/media/shemi.fe225851dbff975263ac.png",
+    "static/media/seli.png": "/NovaWeb/static/media/seli.ae9da79c78d07ea0a2d2.png",
+    "static/media/runi.png": "/NovaWeb/static/media/runi.151622bcbfea7ad42bbe.png",
     "static/media/logo.png": "/NovaWeb/static/media/logo.a5a5927043196c8fb248.png",
     "static/media/logo.svg": "/NovaWeb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/NovaWeb/index.html",
-    "main.f9eca2a5.css.map": "/NovaWeb/static/css/main.f9eca2a5.css.map",
-    "main.250cd674.js.map": "/NovaWeb/static/js/main.250cd674.js.map",
+    "main.48918fed.css.map": "/NovaWeb/static/css/main.48918fed.css.map",
+    "main.28056252.js.map": "/NovaWeb/static/js/main.28056252.js.map",
     "488.b94cc57a.chunk.js.map": "/NovaWeb/static/js/488.b94cc57a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9eca2a5.css",
-    "static/js/main.250cd674.js"
+    "static/css/main.48918fed.css",
+    "static/js/main.28056252.js"
   ]
 }
